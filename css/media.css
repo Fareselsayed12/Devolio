@@ -1,0 +1,12 @@
+@media (max-width:992px) {
+    
+  
+        @keyframes w-100 {
+            form{
+                width: 0;
+            }
+            to {
+                width: 10%;
+            }
+        }
+}

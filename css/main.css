@@ -1,0 +1,447 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding: initial;
+}
+:root
+{
+    --mainFont: "Poppins", sans-serif; 
+    --second-font: "Montserrat", sans-serif;
+
+}
+*>p,a,i,span{
+ font-weight: 400;
+    font-family: var(--mainFont);
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: var(--second-font);
+    font-weight: 500;
+}
+#Services h3::after ,
+#Works h3::after,
+#Contact h3::after,
+#Team h3::after
+{
+    content: "";
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    width: 180px;
+    height:30px;
+    color: gray;
+left: 50%;
+top: 50%;
+transform: translateX(-50%);
+z-index: -1;
+}
+#Services h3 ,
+#Works h3,
+#Team h3,
+#Contact h3
+
+{
+    position: relative;
+    z-index: 2;
+}
+
+h1{
+    font-size: 3.95rem;
+}
+/* <!-- ====== star Navbar ======  --> */
+nav .active{
+    position: relative;
+   
+    }
+     nav .active::after{
+    background-color: black;
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: w-100 0.5s forwards;
+    }
+    @keyframes w-100 {
+        form{
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    /* <!-- ====== End Navbar ======  --> */
+    /* <!-- ====== Start Header ======  --> */
+
+header  h1::after{
+    content: "|";
+      color: var(--main-color);
+      animation-name: header-animation ;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      font-weight: bold;
+    }
+    
+    @keyframes header-animation {
+       0% {content: "|";}
+       2% {content: "D|";}
+       4% {content: "De|";}
+       6% {content: "Dev|";}
+       8% {content: "Deve|";}
+       10% {content: "Devel|";}
+       12% {content: "Develo|";}
+       14% {content: "Develop|";}
+       16% {content: "Develope|";}
+       18% {content: "Developer|";}
+       20% {content: "Develope|";}
+       22% {content: "Develop|";}
+       24% {content: "Develo|";}
+       26% {content: "Devel|";}
+       28% {content: "Deve|";}
+       30% {content: "Dev|";}
+       32% {content: "De|";}
+       34% {content: "D|";}
+       36% {content: "D|";}
+       38% {content: "De|";}
+       40% {content: "Des|";}
+       42% {content: "Des|";}
+       44% {content: "Desi|";}
+       46% {content: "Desig|";}
+       48% {content: "Design|";}
+       50% {content: "Designe|";}
+       52% {content: "Designer|";}
+       54% {content: "Designe|";}
+       56% {content: "Design|";}
+       58% {content: "Desig|";}
+       60% {content: "Desi|";}
+       62% {content: "Des|";}
+       64% {content: "De|";}
+       66% {content: "L|";}
+       68% {content: "La|";}
+       70% {content: "Lar|";}
+       72% {content: "Larr|";}
+       74% {content: "Larry|";}
+       76% {content: "Larry D|";}
+       78% {content: "Larry Da|";}
+       80% {content: "Larry Dan|";}
+       82% {content: "Larry Dani|";}
+       82% {content: "Larry Danil|";}
+       84% {content: "Larry Danils|";}
+       86% {content: "Larry Danil|";}
+       88% {content: "Larry Dani|";}
+       90% {content: "Larry Dan|";}
+       92% {content: "Larry Da|";}
+       94% {content: "Larry D|";}
+       96% {content: "Larry |";}
+       98% {content: "Larr|";}
+       98.5% {content: "Lar|";}
+       99% {content: "La|";}
+       99.5% {content: "L|";}
+       100% {content: "|";}
+      
+       
+    
+    }
+    header{
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../imgs/bg.jpg);
+        background-size: cover; 
+        background-position: center center;
+        display: flex ;
+        align-items: center;
+        justify-content: center;
+        background-attachment: fixed;
+        
+    }
+        header ul a{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            border: 1px solid transparent;
+            background-color: rgba(0, 0, 0, 0.5);
+            
+        }
+    /* <!-- ====== Start About ======  --> */
+    .doits::after{
+        content: "";
+        position: absolute;
+        background-image: url(../imgs/dots.png);
+        background-repeat: repeat;
+        width: 300px;
+        height:300px;
+        color: gray;
+    top:50%  ;
+    left: -10%;
+    z-index: -1;
+    }
+    #About  button{
+        padding: 10px 30px;
+        border: 1px solid #1c1c1c;
+        border-radius: 5px;
+        font-size: 13px;
+        transition: all 0.5s;
+    }
+    .buton-1{
+        background-color: black;
+        color: white;
+    }
+    .buton-1:hover{
+        background-color: white;
+        color: black;
+    }
+    .buton-2:hover{
+        background-color: black;
+        color: white;
+    }
+    .my-pro-one{
+
+        width: 0%;
+        animation: my-pro 1.5s forwards;
+        }  
+        .my-pro-two{
+        width: 0%;
+        animation: my-pro-two 1.5s forwards;
+        }
+        .my-pro-three{
+        
+        width: 0%;
+        animation: my-pro-three 1.5s forwards;
+        }
+        @keyframes my-pro {
+            form{
+        width: 0%;
+            }
+            to {
+        width: 95%;
+            }
+        }
+        @keyframes my-pro-two {
+            form{
+        width: 0%;
+            }
+            to {
+        width: 80%;
+            }
+        }
+        @keyframes my-pro-three {
+            form{
+        width: 0%;
+            }
+            to {
+        width: 90%;
+            }
+        }
+        .my-end-pills{
+            border-radius: 5px;
+        }
+       .skills .progress, .progress-stacked {
+            --bs-progress-height: 1.4rem;
+            --bs-progress-font-size: 0.95rem;
+            --bs-progress-bg: var(--bs-secondary-bg);
+            --bs-progress-border-radius: var(--bs-border-radius);
+            --bs-progress-box-shadow: var(--bs-box-shadow-inset);
+            --bs-progress-bar-color: #fff;
+            --bs-progress-bar-bg: black;
+            margin: 1.9125rem 0;
+            --bs-progress-bar-transition: width 0.6s ease;
+            display: flex;
+            height: var(--bs-progress-height);
+            overflow: hidden;
+            font-size: var(--bs-progress-font-size);
+            background-color: var(--bs-progress-bg);
+            border-radius: var(--bs-progress-border-radius);
+        }
+/* <!-- ====== End About ======  --> */
+/* <!-- ====== Start Services ======  --> */
+        .circle{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: rgba(128, 128, 128, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 400ms all;
+        }
+        .inner-2:hover .circle{
+            background-color: black;
+            color: white;
+        }
+/* <!-- ====== End Services ======  --> */
+/* <!-- ====== Start Works(portfolio) ======  --> */
+#Works .nav-link{
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+}
+.layer{
+            position: absolute;
+            inset: 5px;
+            background-color: white;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.5s;
+            gap: 20px;
+        }
+.inner-3:hover .layer{
+            opacity: 1;
+            transform: translateY(0px);
+            gap: 5px;
+          
+        }  
+ .st a{
+            text-decoration: none;
+            width: 30px;
+            height: 30px;
+            background-color:black;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+ .st a:hover{
+            background-color: white;
+            color: black;
+        }
+        /* <!-- ====== End Works(portfolio) ======  --> */
+/* <!-- ====== Start Client ======  --> */
+.img-w-slider{
+    width: 6.875rem;
+    height: 6.875rem;
+    border-radius: 50%;
+}
+#Client .carousel-indicators{
+bottom:-30%;        }
+#Client .carousel-indicators button{
+background-color: grey;
+width: 0.7rem;
+height: 0.7rem;
+border-radius: 50%;
+}
+/* <!-- ====== End Client ======  --> */
+/* <!-- ====== Start Team ======  --> */
+.img-layer{
+    inset: .3125rem;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+   transform:  scale(0.5,0.5);
+    transition: all 0.5s;
+   }
+.small-inner:hover .img-layer{
+opacity: 1;
+transform: rotateY(-180deg) scale(1,1);
+}
+.small-inner:hover * img{
+transform: scale(1.2);
+}
+.pic img{
+transition: 1s all;
+}
+.inner-5:hover .img-layer{
+opacity: 1;
+transform: rotateY(-180deg) scale(1,1);
+}
+   .img-layer ul a{
+    text-decoration: none;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+   }
+   .img-layer ul a i{
+    transform: rotateY(180deg);
+   }
+   .img-layer ul a:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+   }
+/* <!-- ====== End Team ======  --> */
+/* <!-- ====== Start contact ======  --> */
+#Contact a {
+
+    text-decoration: none;
+  
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+transition: all 0.5s;
+background-color: var(--bs-gray-200) !important;
+   }
+   #Contact a:hover {
+
+  
+  background-color: black !important;
+    color: white;
+
+   }
+   #Contact button{
+    padding: 10px 50px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+   }
+   #Contact .my-form-control {
+    background-color: var(--bs-gray-200) !important;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    display: block;
+    width: 100%;
+    /* height: calc(1.5em + 1.75rem + 2px); */
+    padding: 0.875rem 0.875rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+#Contact input:focus{
+    outline: none;
+}
+#Contact textarea:focus{
+    outline: none;
+}
+/* <!-- ====== End contact ======  --> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
